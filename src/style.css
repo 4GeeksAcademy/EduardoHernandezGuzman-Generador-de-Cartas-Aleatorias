@@ -1,1 +1,123 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    #29e7910f,
+    #10a75736 259px,
+    #10a75726 20px,
+    #10a75712 209px
+  );
+}
+
+#carta {
+  width: 300px;
+  height: 450px;
+  background-color: #f8f6f8;
+  border-radius: 20px;
+  margin: 5% auto;
+  box-shadow: 20px 20px 20px 8px #0000005c;
+  border-style: solid;
+  border-color: #0000000a;
+}
+#simboloArriba {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+
+  font-size: 100px;
+  width: 60px;
+  height: 100px;
+  margin-bottom: -40;
+}
+#numero {
+  color: white;
+  font-size: 120px;
+  width: 120px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: monospace;
+}
+#simboloAbajo {
+  float: right;
+  position: relative;
+  right: 10px;
+  bottom: -15px;
+
+  font-size: 100px;
+  width: 60px;
+  height: 100px;
+  transform: rotate(-180deg);
+}
+#boton-nueva {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+}
+
+.boton {
+  appearance: button;
+  background-color: #d9a1a1;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 19px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.boton:after {
+  background-clip: padding-box;
+  background-color: #f3b3b3;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.boton:main,
+.boton:focus {
+  user-select: auto;
+}
+
+.boton:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.boton:disabled {
+  cursor: auto;
+}
+
+.boton:active:after {
+  border-width: 0 0 0px;
+}
+
+.boton:active {
+  padding-bottom: 10px;
+}
